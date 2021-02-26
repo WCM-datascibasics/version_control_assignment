@@ -11,19 +11,36 @@ If the version control concepts or `git` commands are still confusing to you, co
  0. Create a branch in this assignment repository named `submission`, then list all the branches you have (Hint: look at the Branch chapter of notes on how branches work, how to create new ones, and check existing branches):
 
     ```bash
+git branch submission
+git branch -a
+
+main
+  submission
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
     # git command used and new list of branches
     ```
 
  1. List the current `remote` name and hyperlink destination of this assignment repository (Hint: if you are not sure, add `--help` after your command to check remotes.). 
 
     ```bash
-    # your git command and output here
+git remote -v
+origin	https://github.com/Joody90/version_control_assignment.git (fetch)
+origin	https://github.com/Joody90/version_control_assignment.git (push)
+
     ```
 
 
  2. Add a second remote destination named `upstream` to your assignment repository, `upstream` is a common name used for the repository that people have forked from, in our case, the `upstream` will be at `https://github.com/WCM-datascibasics/version_control_assignment`. List the new list of remotes after you've added the new remote. 
  
     ```bash
+git remote -v
+origin	https://github.com/Joody90/version_control_assignment.git (fetch)
+origin	https://github.com/Joody90/version_control_assignment.git (push)
+upstream	https://github.com/WCM-datascibasics/version_control_assignment (fetch)
+0.	upstream	https://github.com/WCM-datascibasics/version_control_assignment (push)
+
     # list the new list of remotes here
     ```
 
