@@ -46,7 +46,14 @@ upstream	https://github.com/WCM-datascibasics/version_control_assignment (fetch)
 
  3. Save your modifications to this file so far and create a commit indicating you've answered the first 2 questions. Then try pushing the changes to the `upstream` destination on GitHub. What happens? Explain in your own words why does this happen? What are the benefits of having this `upstream` remote added when working collaboratively (Hint: read git command outputs!)?
 
-    > Your answer here
+    > git push upstream main 
+Username for 'https://github.com': Joody90
+Password for 'https://Joody90@github.com': 
+remote: Permission to WCM-datascibasics/version_control_assignment.git denied to Joody90.
+fatal: unable to access 'https://github.com/WCM-datascibasics/version_control_assignment/': The requested URL returned error: 403
+
+
+I don't have access to the main folder in the remote repository. 
 
 
  4. Now clone the repository for the [class website](https://github.com/WCM-datascibasics/wcm-datascibasics.github.io), and in the class website repository:
