@@ -11,20 +11,34 @@ If the version control concepts or `git` commands are still confusing to you, co
  0. Create a branch in this assignment repository named `submission`, then list all the branches you have (Hint: look at the Branch chapter of notes on how branches work, how to create new ones, and check existing branches):
 
     ```bash
-    # git command used and new list of branches
+    
+    git branch submission
+    git branch
+    * main
+      submission
     ```
 
  1. List the current `remote` name and hyperlink destination of this assignment repository (Hint: if you are not sure, add `--help` after your command to check remotes.). 
 
     ```bash
-    # your git command and output here
+    
+    git remote -v
+    origin	https://github.com/matthewbredder/version_control_assignment.git (fetch)
+    origin	https://github.com/matthewbredder/version_control_assignment.git (push)
     ```
 
 
  2. Add a second remote destination named `upstream` to your assignment repository, `upstream` is a common name used for the repository that people have forked from, in our case, the `upstream` will be at `https://github.com/WCM-datascibasics/version_control_assignment`. List the new list of remotes after you've added the new remote. 
  
     ```bash
-    # list the new list of remotes here
+    
+    git remote add upstream https://github.com/WCM-datascibasics/version_control_assignment
+    
+    git remote -v
+    origin	https://github.com/matthewbredder/version_control_assignment.git (fetch)
+    origin	https://github.com/matthewbredder/version_control_assignment.git (push)
+    upstream	https://github.com/WCM-datascibasics/version_control_assignment (fetch)
+    upstream	https://github.com/WCM-datascibasics/version_control_assignment (push)
     ```
 
  3. Save your modifications to this file so far and create a commit indicating you've answered the first 2 questions. Then try pushing the changes to the `upstream` destination on GitHub. What happens? Explain in your own words why does this happen? What are the benefits of having this `upstream` remote added when working collaboratively (Hint: read git command outputs!)?
