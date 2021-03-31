@@ -108,8 +108,7 @@ Date:   Mon Dec 28 16:01:51 2020 -0500
  8. You can define global ignore patterns in `~/.gitignore_global` after running `git config --global core.excludesfile ~/.gitignore_global`. Do this, and set up your global `gitignore` file to ignore OS-specific or editor-specific temporary files, like `.DS_Store`, or `.vscode`. Feel free to Google around for common gitignore entries for Python projects or other projects of your interest.
 
     ```bash
-    # # Compiled source #
-###################
+# Compiled source #
 *.com
 *.class
 *.dll
@@ -118,9 +117,6 @@ Date:   Mon Dec 28 16:01:51 2020 -0500
 *.so
 
 # Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
 *.7z
 *.dmg
 *.gz
@@ -131,13 +127,11 @@ Date:   Mon Dec 28 16:01:51 2020 -0500
 *.zip
 
 # Logs and databases #
-######################
 *.log
 *.sql
 *.sqlite
 
 # OS generated files #
-######################
 .DS_Store
 .DS_Store?
 ._*
